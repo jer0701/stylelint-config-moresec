@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/MoresecFE/stylelint-config-moresec/issues"
   },
-  "homepage": "https://github.com/MoresecFE/stylelint-config-moresec#readme"
+  "homepage": "https://github.com/MoresecFE/stylelint-config-moresec#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
