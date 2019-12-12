@@ -434,6 +434,8 @@ module.exports = {
     "time-min-milliseconds": 50,
 
     // ************ Unit ************
+    // 关闭 Unicode 字节顺序标志
+    "unicode-bom": null,
     // 指定一个禁止使用的单位的黑名单
     "unit-blacklist": null,
     // 单位的小写
