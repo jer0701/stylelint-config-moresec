@@ -7,16 +7,16 @@ stylelint-config rules for MoresecFE
 
 ```shell
 # npm
-npm install stylelint-config-moresec --save-dev
+npm install @moresec/stylelint-config-moresec --save-dev
 
 # yarn
-yarn add stylelint-config-moresec --save-dev
+yarn add @moresec/stylelint-config-moresec -D
 ```
 
 
 ## Usage
 
-It is recommended to use with VSCode [stylelint plugin](https://marketplace.visualstudio.com/items?itemName=thibaudcolas.stylelint)
+It is recommended to use with VSCode plugin [stylelint-stzhang](https://marketplace.visualstudio.com/items?itemName=stuartzhang.stylelint-stzhang)
 
 ```javascript
 {
@@ -30,7 +30,7 @@ It is recommended to use with VSCode [stylelint plugin](https://marketplace.visu
 
 ## Integrating with Prettier
 
-```
+```shell
 // 1. 安装 Prettier
 yarn add prettier --dev --exact
 yarn add stylelint-prettier stylelint-config-prettier --dev
@@ -39,6 +39,17 @@ yarn add stylelint-prettier stylelint-config-prettier --dev
 {
   extends: [
     "@moresec/moresec",
+    "stylelint-prettier/recommended"
+  ]
+}
+// 3. 例子
+// 安装
+yarn add stylelint stylelint-prettier stylelint-config-prettier -D
+yarn add prettier --dev --exact
+// .stylelintrc
+{
+  "extends": [
+    "@moresec/stylelint-config-moresec",
     "stylelint-prettier/recommended"
   ]
 }
@@ -54,5 +65,4 @@ yarn add stylelint-prettier stylelint-config-prettier --dev
 ## Environment
 
 > Node.js >= 8
-
 > stylelint >= 12
