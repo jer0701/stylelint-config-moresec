@@ -16,7 +16,9 @@
   },
   "main": "./index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "README.md",
+    "package.json"
   ],
   "peerDependencies": {
     "stylelint": ">=12.0.0"
