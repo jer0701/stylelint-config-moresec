@@ -20,7 +20,7 @@ It is recommended to use with VSCode plugin [stylelint-stzhang](https://marketpl
 
 ```javascript
 {
-  extends: ["@moresec/moresec"],
+  extends: ["@moresec/stylelint-config-moresec"],
   rules: {
     // 这里自定义规则。但不推荐，有异议的地方建议提 PR，这样也能保证自己写配置文件的初衷。
   }
@@ -38,7 +38,7 @@ yarn add stylelint-prettier stylelint-config-prettier --dev
 // 2. 配置 .stylelintrc 相关文件
 {
   extends: [
-    "@moresec/moresec",
+    "@moresec/stylelint-config-moresec",
     "stylelint-prettier/recommended"
   ]
 }
