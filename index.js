@@ -3,7 +3,6 @@
 module.exports = {
   rules: {
     // ************ At-rule ************
-
     // 指定一个禁止使用的 at 规则的黑名单
     "at-rule-blacklist": null,
     // 要求或禁止使用空行 always-有必须有空行 never-之前不加空行
@@ -36,7 +35,6 @@ module.exports = {
     // 指定一个允许使用的 at 规则的白名单
     "at-rule-whitelist": null,
 
-
     // ************ Block ************
     // 块关闭括号（右括号）禁止使用空行
     "block-closing-brace-empty-line-before": "never",
@@ -59,7 +57,6 @@ module.exports = {
     // 开括号前一个空格
     "block-opening-brace-space-before": "always",
 
-
     // ************ Color ************
     // 指定十六进制颜色为小写格式
     "color-hex-case": "lower",
@@ -71,7 +68,6 @@ module.exports = {
     "color-no-hex": null,
     // 禁止使用无效的十六进制颜色
     "color-no-invalid-hex": true,
-
 
     // ************ Comment ************
     // 注释之前空行
@@ -89,11 +85,9 @@ module.exports = {
     // 指定一个不允许出现在注释中的单词的黑名单
     "comment-word-blacklist": null,
 
-
     // ************ Custom media ************
     // 指定一个自定义媒体查询名称的匹配模式
     "custom-media-pattern": "always",
-
 
     // ************ Custom property ************
     // 自定义属性前使用空行
@@ -113,14 +107,11 @@ module.exports = {
     // 为自定义属性指定一个匹配模式
     "custom-property-pattern": null,
 
-
-
     // ************ Declaration ************
     // 声明后禁止使用空格
     "declaration-bang-space-after": "never",
     // 声明前使用空格
     "declaration-bang-space-before": "always",
-
 
     // ************ Declaration Block ************
     // 在声明的块中中禁止出现重复的属性
@@ -174,7 +165,6 @@ module.exports = {
     // 指定一个在声明中禁止使用的属性和值的白名单
     "declaration-property-value-whitelist": null,
 
-
     // ************ Font family ************
     // 指定字体名称当推荐使用引号时再使用引号
     "font-family-name-quotes": "always-where-recommended",
@@ -223,7 +213,6 @@ module.exports = {
     // 要求函数后有空格
     "function-whitespace-after": "always",
 
-
     // ************ General / Sheet ************
     // 缩进2
     indentation: 2,
@@ -247,7 +236,6 @@ module.exports = {
     "max-line-length": 500,
     // 限制允许嵌套的深度
     "max-nesting-depth": 10,
-
 
     // ************ Media ************
     // media功能中的冒号后空格
@@ -273,7 +261,6 @@ module.exports = {
     // media功能中，范围运算符前需要一个空格
     "media-feature-range-operator-space-before": "always",
 
-
     // ************ Media Query ************
     // 多行媒体查询列表中的逗号后换行
     "media-query-list-comma-newline-after": "always-multi-line",
@@ -286,8 +273,8 @@ module.exports = {
 
 
     // ************ No ************
-    // 禁止低优先级的选择器出现在高优先级的选择器之后
-    "no-descending-specificity": true,
+    // 允许低优先级的选择器出现在高优先级的选择器之后（暂时允许）
+    "no-descending-specificity": null,
     // 禁止@import样式表中的重复规则
     "no-duplicate-at-import-rules": true,
     // 禁用 不允许重复的选择器
@@ -436,7 +423,6 @@ module.exports = {
     // 禁止在简写属性中使用冗余值
     "shorthand-property-no-redundant-values": null,
 
-
     // ************ String ************
     // 禁止在字符串（转义）换行
     "string-no-newline": true,
@@ -446,7 +432,6 @@ module.exports = {
     // ************ Time ************
     // 指定时间值的最小毫秒数
     "time-min-milliseconds": 50,
-
 
     // ************ Unit ************
     // 指定一个禁止使用的单位的黑名单
@@ -461,6 +446,8 @@ module.exports = {
     // ************ Value ************
     // 指定关键字的值的大小写
     "value-keyword-case": "lower",
+    // 允许给值添加浏览器引擎前缀
+    "value-no-vendor-prefix": null,
 
     // ************ Value List ************
     // 多行值列表的逗号后换行
@@ -472,8 +459,6 @@ module.exports = {
     // 值列表的逗号前不允许空格
     "value-list-comma-space-before": "never",
     // 限制值列表中相邻空行的数量0
-    "value-list-max-empty-lines": 0,
-    // 禁止给值添加浏览器引擎前缀
-    "value-no-vendor-prefix": null
+    "value-list-max-empty-lines": 0
   }
 };
