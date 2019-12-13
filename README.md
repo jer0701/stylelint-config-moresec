@@ -6,10 +6,6 @@ stylelint-config rules for MoresecFE
 ## Installation
 
 ```shell
-# npm
-npm install @moresec/stylelint-config-moresec --save-dev
-
-# yarn
 yarn add @moresec/stylelint-config-moresec -D
 ```
 
@@ -22,7 +18,7 @@ It is recommended to use with VSCode plugin [stylelint-stzhang](https://marketpl
 {
   extends: ["@moresec/stylelint-config-moresec"],
   rules: {
-    // 这里自定义规则。但不推荐，有异议的地方建议提 PR，这样也能保证自己写配置文件的初衷。
+    // 在这里可以自定义规则。但不推荐，有异议的地方建议提 PR，这样也是维持写此配置文件的初衷。
   }
 }
 ```
@@ -65,4 +61,5 @@ yarn add prettier --dev --exact
 ## Environment
 
 > Node.js >= 8
+
 > stylelint >= 12
