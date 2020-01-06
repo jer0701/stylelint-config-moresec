@@ -1,6 +1,6 @@
 {
   "name": "@moresec/stylelint-config-moresec",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "stylelint config for MoresecFE",
   "keywords": [
     "stylelint",

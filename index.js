@@ -22,8 +22,23 @@ module.exports = {
     "at-rule-name-newline-after": "always-multi-line",
     // 名称后需要空格 -单行声明块在规则的名称后一个空格
     "at-rule-name-space-after": "always-single-line",
-    // 不允许at-rules不明
-    "at-rule-no-unknown": true,
+    // 不允许 at-rules 不明。为了兼容 scss 等预处理器，排除一些特殊字段
+    "at-rule-no-unknown": [true,
+      {
+        ignoreAtRules: [
+          "each",
+          "else",
+          "extend",
+          "for",
+          "function",
+          "if",
+          "include",
+          "import",
+          "mixin",
+          "rule"
+        ]
+      }
+    ],
     // 禁止 at 规则使用浏览器引擎前缀
     "at-rule-no-vendor-prefix": null,
     // 指定属性的需求列表
